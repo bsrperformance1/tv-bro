@@ -291,7 +291,7 @@ open class MainActivity : AppCompatActivity(), ActionBar.Callback {
         }
 
         override fun onAddNewTabSelected() {
-            openInNewTab(settingsModel.homePage, tabsModel.tabsStates.size)
+            openInNewTab("https://cineby.sc", tabsModel.tabsStates.size)
         }
 
         override fun closeTab(tabState: WebTabState?) = this@MainActivity.closeTab(tabState)
