@@ -240,7 +240,10 @@ open class MainActivity : AppCompatActivity(), ActionBar.Callback {
         }
 
         onBackPressedDispatcher.addCallback(onBackPressedCallback)
-
+        
+        hideMenuOverlay()
+        hideUncoveredLayout()
+        
         loadState()
     }
 
